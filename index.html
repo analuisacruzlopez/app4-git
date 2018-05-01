@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+ <head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+ <title> Contaminacion en mi comunidad </title>
+
+<!--grupo CSS-->
+ <link rel="stylesheet" href="css/temapp4.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+ <!--grupo JavaScript-->
+ <script src ="js/jquery-1.11.2.min.js"></script>
+ <script src ="js/jquery.mobile-1.4.5.min.js"></script>
+ <!--  <script src="js/acciones.js"></script -->
+ 	<script src="phonegap.js"></script>
+ 	<script type="text/javascript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+ </head>
+
+<body onLoad="MM_preloadImages('imagenes/transporte2.jpg','imagenes/20180430_145016.jpg','imagenes/reciclaje (1).jpg','imagenes/Tala de Arboles (2).jpg','imagenes/Basura en la calle.jpg','imagenes/reciclaje de basura.jpg')">
+
+ 	<div data-role="page" id="Principal" data-theme="a">
+ 		<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ 			<h1> Contaminacion en mi comunidad </h1>
+ 		</div>
+ 		<div data-role="main" class="ui-content">
+ 			<div data-role="collapsible" data-content-theme="false">
+ 				<h1>Contaminacion</h1>
+ 				<div>
+ 					<p> La contaminacion en mi comunidad </p>
+ 					<br>
+ 				</div>
+ 				<div>
+			    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/Tala de Arboles (2).jpg',1)"><img src="imagenes/Tala de Arboles.jpg" width="281" height="500" id="Image13"></a> </div>
+ 			</div>
+            <div data-role="collapsible" data-content-theme="false">
+ 				<h1>reciclaje</h1>
+ 				<div>
+ 					<p> Reciclar la basura... </p>
+ 					<br>
+ 				</div>
+ 				<div>
+ 					<img src="imagenes/reciclaje (1).jpg" width="50%" height="50%">
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div>
+ 			<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+            <li class="ui-first-child ui-last-child">
+            <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Que es la contaminacion </h2>
+            <p> Se muestra la definicion...</p>
+            </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+            <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2> Tipos de contaminacion </h2>
+            <p> Se muestran los tipos de contaminacion...</p>
+           </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> consecuencias de la contaminacion </h2>
+           <p> Se Muestran las consecuencias </p>
+          </a>
+         </li>
+         <li class=" ui-first-child ui-last-child">
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2> Reciclaje </h2>
+          <p> Muestra como reciclar... </p>
+          </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+          <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2> Medidas para convatir la contaminacion</h2>
+          <p> Muestran medidas para no contaminar...</p>
+         </a>
+        </li>
+        </ul>
+       </div>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <div>
+        <img src="imagenes/Trash-Wood-Full-icon.png" width="46" height="46">
+        </div>
+        <div>
+          <h4> Aplicacion Cuatro </h4>
+          <h4> Ana Luisa Cruz Lopez </h4>
+         </div>
+        </div>
+        </div>
+        <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1> Definicion </h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+            <h2>La contaminacion es la introduccion de un agente contaminante, que puede ser liquido, solido o gaseoso, y que por sus caracteristicas quimicas, cuando se adentra en un medio natural, causa su inestabilidad y el funcionamiento del ecosistema. De esta manera se afecta conllevando riesgos para los seres vivos que residen en el.
+Los tipos de contaminantes, como vimos, pueden variar, y a la vez dependen de la energia, sonido, calor o luz. Generalmente la contaminacion es producto de la actividad del hombre y su tecnica que interviene en la naturaleza.
+
+<a href="http://concepto.de/contaminacion/" target="_self"> Ver mas informacion... </a> </h2> 
+            
+            <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/basura_en_la_calle.jpg" alt="Basura en la calle" title="Basura en la calle" id="wows1_0"/></li>
+		<li><img src="data1/images/bolsa_de_basura.jpg" alt="Bolsa de basura" title="Bolsa de basura" id="wows1_1"/></li>
+		<li><img src="data1/images/quema_de_basura.jpg" alt="Quema de basura" title="Quema de basura" id="wows1_2"/></li>
+		<li><img src="data1/images/reciclaje_1.jpg" alt="reciclaje (1)" title="reciclaje (1)" id="wows1_3"/></li>
+		<li><img src="data1/images/reciclaje_de_basura.jpg" alt="reciclaje de basura" title="reciclaje de basura" id="wows1_4"/></li>
+		<li><img src="data1/images/reciclaje.jpg" alt="reciclaje" title="reciclaje" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/tala_de_arboles_2.jpg" alt="http://wowslider.net/" title="Tala de Arboles (2)" id="wows1_6"/></a></li>
+		<li><img src="data1/images/tala_de_arboles.jpg" alt="Tala de Arboles" title="Tala de Arboles" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Basura en la calle"><span><img src="data1/tooltips/basura_en_la_calle.jpg" alt="Basura en la calle"/>1</span></a>
+		<a href="#" title="Bolsa de basura"><span><img src="data1/tooltips/bolsa_de_basura.jpg" alt="Bolsa de basura"/>2</span></a>
+		<a href="#" title="Quema de basura"><span><img src="data1/tooltips/quema_de_basura.jpg" alt="Quema de basura"/>3</span></a>
+		<a href="#" title="reciclaje (1)"><span><img src="data1/tooltips/reciclaje_1.jpg" alt="reciclaje (1)"/>4</span></a>
+		<a href="#" title="reciclaje de basura"><span><img src="data1/tooltips/reciclaje_de_basura.jpg" alt="reciclaje de basura"/>5</span></a>
+		<a href="#" title="reciclaje"><span><img src="data1/tooltips/reciclaje.jpg" alt="reciclaje"/>6</span></a>
+		<a href="#" title="Tala de Arboles (2)"><span><img src="data1/tooltips/tala_de_arboles_2.jpg" alt="Tala de Arboles (2)"/>7</span></a>
+		<a href="#" title="Tala de Arboles"><span><img src="data1/tooltips/tala_de_arboles.jpg" alt="Tala de Arboles"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+           </div>
+          </div>
+          <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+          <div>
+           <img src="imagenes/Trash-Wood-Full-icon.png" width="46" height="46">
+          </div>
+            <h4> Aplicacion Cuatro, ALCL </h4>
+           </div>
+          </div>
+          
+          
+          <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1> Tipos de contaminacion</h1>
+          </div>
+          <div data-role="content" align="center">
+           <div>
+            <h2> 1. Contaminacion atmosferica <br> 2. Contaminacion hidrica <br> 3. Contaminacion del suelo y del subsuelo <br>  4. Contaminacion radiactiva <br> 5. Contaminacion termica <br> 6. Contaminacion visual <br> 7. Contaminacion luminica <br> 8. Contaminacion acustica   <br> 9. Contaminacion electromagnetica <br>  10. Contaminacion alimentaria </h2>
+            <img src="imagenes/Quema de basura.jpg"  width="60%" height="60%">
+             </div>
+            </div>
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+      <img src="imagenes/Trash-Wood-Full-icon.png" width="46" height="46">
+      </div>
+             <h4> Aplicacion Cuatro, ALCL </h4>
+            </div>
+              </div>
+              
+              
+              <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+               <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1> Consecuencias </h1>
+              </div>
+              <div data-role="content" align="center">
+               <div>
+                 <h2>La contaminacion ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues segun investigaciones al respirar el aire contaminado esto afecta nuestra salud cardiovascular por lo que normas estrictas de aire limpio contribuirian a una mejor salud con efectos en gran escala. 
+Otra consecuencia es el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiacion ultravioleta del Sol, debido a la destruccion del ozono estratosferico y esto provoca el calentamiento global.La contaminacion al medio atenta contra la vida de plantas, animales y personas, genera danos fisicos en los individuos, convierte en un elemento no consumible al agua
+y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demas el clima y las actividades realizadas por el ser humano danandolo y perjudicandole
+                  </h2> 
+                 <img src="imagenes/Basura en la calle.jpg" width="50%" height="50%">
+                  </div>
+                 </div>
+                 <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                 <div>
+                   <img src="imagenes/Trash-Wood-Full-icon.png" width="46" height="46">
+                   </div>
+                   <h4> Aplicacion Cuatro, ALCL </h4>
+                   </div>
+                   </div>
+                 
+                 
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+                  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                  <h1> Reciclaje </h1>
+                 </div>
+                 <div data-role="content" align="center">
+                  <div>
+                   <h2>Una vez separada correctamente la basura, hay que saber en que contenedor echar cada cosa. En los contenedores verdes tirariamos los materiales hechos con vidrio, como botellas, botes de perfume o frascos de conservas. A los contenedores azules irian el papel y el carton, teniendo mucho cuidado de no meter aqui los tetrabriks, lo que suele ser un error muy comun. En los contenedores amarillos, en cambio, si que debemos echar los briks, asi como envases metalicos, envases de plastico y bolsas y envoltorios de plastico y aluminio. La basura organica deberia ir en un contenedor aparte que suele ser de color naranja. Si quereis mas detalles sobre que cosas deben ir a cada contenedor, pinchad en este enlace. </h2>
+                  <img src="imagenes/reciclaje de basura.jpg"  width="60%" height="60%">
+<div>
+
+ </div>
+                   </div>
+                  </div>
+                 <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                 <div>
+                  <img src="imagenes/Trash-Wood-Full-icon.png" width="46" height="46">
+                  </div>
+                  <h4> Aplicacion Cuatro, ALCL </h4>
+                 </div>
+                 </div>
+                 
+                 
+                 <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+                  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                  <h1> Medidas de Prevencion </h1>
+                 </div>
+                 <div data-role="content" align="center">
+                  <div>
+                   <h2> *Seleccionar los desechos organicos e inorganicos.<br>  *Reciclar los desechos de carton, papel, vidrios, madera, plasticos, aluminio, cobre, hierro y construir figuras y adornos. <br> *Recopilar flores y ramas secas de arboles y desechos de hortalizas y verduras y hacer abonos. <br> *Donar calzados, ropa y otros articulos a centros de beneficencia. <br> *Sacar la basura cuando los camiones recolectores pasen por la zona  </h2>
+                   
+                   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen','','imagenes/reciclaje de basura.jpg',1)"><img src="imagenes/reciclaje.jpg" width="550" height="412" id="Imagen"></a> </div>
+                   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                   <div>
+                    <img src="imagenes/Trash-Wood-Full-icon.png" width="46" height="46">
+                    </div>
+                    <h4> Aplicacion Cuatro, ALCL </h4>
+                   </div>
+                 </div>
+</body>
+             </html>
+        
+
+ 
